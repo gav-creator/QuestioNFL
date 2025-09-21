@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_scss import Scss
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__, template_folder='QuestioNFL_front')
+app = Flask(__name__, template_folder='QuestioNFL_front_2/src', static_folder='QuestioNFL_front_2/img_src')
 
 @app.route('/')
 def home():
