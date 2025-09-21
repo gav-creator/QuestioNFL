@@ -149,15 +149,15 @@
 <body>
   <!-- navigation bar -->
   <nav class="navbar">
-    <a href="home.html">Home</a>
-    <a href="aboutUs.html">About Us</a>
-    <a href="players.html">Players</a>
-    <a href="search.html">Search</a>
+    <a href={{ url_for('home') }}>Home</a>
+    <a href={{ url_for('aboutUs') }}>About Us</a>
+    <a href={{ url_for('players') }}>Players</a>
+    <a href={{ url_for('search') }}>Search</a>
   </nav>
 
   <!-- logo -->
   <header>
-    <a href="home.html">
+    <a href={{ url_for('home') }}>
       <img src="../img_src/questioNFL_logo_profile_3.png" alt="MatchPoint Logo">
     </a>
   </header>
@@ -186,21 +186,7 @@
         return;
       }
 
-
-
-
-      //  (replace with API call later) just hear for now to see if it works 
-      const players = [
-        { name: "Patrick Mahomes", team: "Kansas City Chiefs", position: "QB", injury: "Out" },
-        { name: "Travis Kelce", team: "Kansas City Chiefs", position: "TE", injury: "Questionable - Knee" },
-        { name: "Justin Jefferson", team: "Minnesota Vikings", position: "WR", injury: "Out - Hamstring" },
-        { name: "Joe Burrow", team: "Cincinnati Bengals", position: "QB", injury: "Active" },
-        { name: "Lebron James", team: "LA Lakers", position: "Small Forward", injury: "Out Indefinity (he plays basketball, not football)" }
-      ];
-
-
-
-
+      
       // Filter players by search
       const filtered = players.filter(player =>
         player.name.toLowerCase().includes(query) ||

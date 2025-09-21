@@ -107,15 +107,15 @@ body {
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="home.html">Home</a>
-    <a href="aboutUs.html">About Us</a>
-    <a href="players.html">Players</a>
-    <a href="search.html">Search</a>
+    <a href={{ url_for('home') }}>Home</a>
+    <a href={{ url_for('aboutUs') }}>About Us</a>
+    <a href={{ url_for('players') }}>Players</a>
+    <a href={{ url_for('search') }}>Search</a>
   </nav>
 
   <!--header-->
   <header>
-    <a href="home.html">
+    <a href={{ url_for('home') }}>
       <img src="../img_src/questioNFL_logo_profile_3.png" alt="MatchPoint Logo">
     </a>
   </header>
