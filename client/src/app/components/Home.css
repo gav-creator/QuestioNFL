@@ -1,0 +1,6 @@
+#home {
+    background-image: url("../../assets/tennis_ground.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
