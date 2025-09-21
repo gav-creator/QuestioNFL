@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="preload" href="../img_src/tennis_ground.jpeg" as="image">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Background with overlay */
+    .hero {
+      flex: 1;
+      background: #055529 url('../img_src/tennis_ground.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.269); /* dark overlay */
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .cta-button {
+      background: #be240c;
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background: #9d5d09;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(90deg, #774e11, #61461e);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 16px;
+      padding: 16px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background: rgb(190, 36, 12);
+    }
+
+    /*logo stuff*/
+header {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+}
+
+header img {
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+}
+
+
+
+    /* Info Card under hero */
+    article {
+      background: rgba(255, 255, 255, 0.9);
+      color: #222;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    article h2 {
+      color: #9d6718;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .navbar {
+        flex-direction: column;
+      }
+      .navbar a {
+        text-align: center;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="players.html">Players</a>
+    <a href="search.html">Search</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <header>
+        <a href="home.html">
+          <img src="../img_src/questioNFL_logo_profile_3.png" alt="MatchPoint Logo">
+        </a>
+      </header>
+      <h1>Track Questionable NFL Player Injuries & Status Updates</h1>
+      <p>Stay ahead of the game with real-time injury reports, predictions, and updates for every questionable NFL player.</p>
+      <a href="players.html" class="cta-button">View Players</a>
+    </div>
+  </section>
+
+  
+
+  <!-- Intro Article -->
+  <article>
+    <h2>Welcome to QuestioNFL</h2>
+    <p>
+      QuestioNFL is your hub for monitoring NFL player injuries and statuses. 
+      Browse through questionable players to get the insights you need. 
+      Whether you're managing fantasy football or just staying updated, we've got you covered!!!
+    </p>
+  </article>
+</body>
+</html>
