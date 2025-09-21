@@ -1,0 +1,1 @@
+This is the frontend of the QuestioNFL website. Used HTML, CSS to set up the main stuff and flask as an API. Everything is labled simply and should be straightforward. 

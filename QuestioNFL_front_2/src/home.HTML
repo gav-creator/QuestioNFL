@@ -20,7 +20,7 @@
       flex-direction: column;
     }
 
-    /* Background with overlay */
+    /* background with overlay */
     .hero {
       flex: 1;
       background: #055529 url('../img_src/tennis_ground.jpeg') no-repeat center center fixed;
@@ -37,7 +37,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.269); /* dark overlay */
+      background: rgba(0, 0, 0, 0.269); 
       z-index: 0;
     }
 
@@ -76,7 +76,7 @@
       background: #9d5d09;
     }
 
-    /* Navbar */
+    /* nav bar */
     .navbar {
       display: flex;
       justify-content: center;
@@ -114,7 +114,7 @@ header img {
 
 
 
-    /* Info Card under hero */
+    /* info hard */
     article {
       background: rgba(255, 255, 255, 0.9);
       color: #222;
@@ -134,7 +134,7 @@ header img {
       text-align: center;
     }
 
-    /* Responsive tweaks */
+    /*   tweaks */
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2rem;
@@ -155,19 +155,19 @@ header img {
 <body>
 
   
-  <!-- Navbar -->
+  <!-- nav bar -->
   <nav class="navbar">
-    <a href={{ url_for('home') }}>Home</a>
-    <a href={{ url_for('aboutUs') }}>About Us</a>
-    <a href={{ url_for('players') }}>Players</a>
-    <a href={{ url_for('search') }}>Search</a>
+    <a href="home.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="players.html">Players</a>
+    <a href="search.html">Search</a>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- main section -->
   <section class="hero">
     <div class="hero-content">
       <header>
-        <a href={{ url_for('home') }}>
+        <a href="home.html">
           <img src="../img_src/questioNFL_logo_profile_3.png" alt="MatchPoint Logo">
         </a>
       </header>
@@ -179,7 +179,7 @@ header img {
 
   
 
-  <!-- Intro Article -->
+  <!-- intro article -->
   <article>
     <h2>Welcome to QuestioNFL</h2>
     <p>
